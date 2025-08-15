@@ -1,0 +1,34 @@
+##### @COPYRİGHT 2025 ARSLAN YAZILIM (arslanengin.com.tr) 
+
+##### 1\. Veri tabanı Yedeğinin Yüklenmesi
+
+Proje ile birlikte gelen "Veritabanı Yedeği" klasörü içindeki veri tabanı yedeğinden herhangi birini SQL Server’a yükleyin. 
+
+Ayrıntılı adımlar için şu videomuza göz atabilirsiniz: = https://youtu.be/QRLOvW6gJ7M?si=PoTujjW58WRTE8Br 
+
+
+
+##### 2. Veritabanı Bağlantısının Yapılandırılması
+
+Projedeki Models klasörü içerisinde yer alan DbIlIlceSecimiContext.cs dosyasındaki bağlantı ayarlarını kendi ortamınıza göre düzenleyin.
+
+
+
+###### DEĞİŞTİRİLMESİ GEREKEN KOD:
+
+optionsBuilder.UseSqlServer("Server=<localhost, . veya .\\\\SQLEXPRESS>;Database=DB\_il\_ilceSecimi;User Id=<sqlServerDogrulamaKullaniciAdiniz>;Password=<sqlServerDogrulamaKullaniciSifreniz>;TrustServerCertificate=True;");
+
+
+
+&nbsp;	# Server, User Id ve Password alanlarını kendi SQL Server yapılandırmanıza uygun şekilde güncelleyin. 
+
+
+
+##### 3. Projenin Çalıştırılması
+
+Yapılandırma tamamlandıktan sonra projeyi derleyip çalıştırabilirsiniz. 
+
+
+##### Kullanılan Teknolojiler ve Araçlar 
+
+Proje MsSQL (SQL Server) veri tabanı, ASP.NET CORE TEKNOLOJİSİ ve VS Community 2022 IDE kullanılarak geliştirilmiştir. 
